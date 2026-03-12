@@ -216,3 +216,21 @@ pipeline {
         } 
     } 
 } 
+
+
+
+//palindrome
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class PalindromeTest {
+
+    @Test
+    void testCheck() {
+        Palindrome palindrome = new Palindrome();
+        
+        assertTrue(palindrome.check("madam"), "madam should be a palindrome");
+        assertFalse(palindrome.check("java"), "java should not be a palindrome");
+    }
+}
+
